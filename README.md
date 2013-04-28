@@ -3,8 +3,13 @@ jquery-ui-daterange-draggable
 
 Facilitates selecting two dates by dragging through the jQuery UI Datepicker.
 
+Screenshot
+----------
+
+![screenshot of jquery-ui-daterange-draggable in action](screenshot.png)
+
 Usage
-=====
+-----
 
 ```JavaScript
 DaterangeSelector({
