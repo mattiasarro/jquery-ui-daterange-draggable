@@ -58,8 +58,8 @@ DaterangeSelector = function (attr) {
     }
     
     this.defineListeners = function () {
-        // live because after datepicker.onSelect, the fucker stops working
-        $("table.ui-datepicker-calendar td a").live("hover", function() {
+        // delegation because after datepicker.onSelect, the fucker stops working
+        $(".ui-datepicker").on("mouseover", '.ui-datepicker-calendar td a', function() {
             if (dp_dragging == true) {
                 var hover_a = $(this);
                 var hover_date = getDate(hover_a);
